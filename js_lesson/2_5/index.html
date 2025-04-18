@@ -6,23 +6,19 @@
   <link rel="stylesheet" type="text/css" href="base.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
   $(function(){
-  
+    // ここに処理を記述
     $("#button").click(function(){
-    const text = $("#value").val();
-    if(text == 1){
-      $("#box").css({'background-color':'red'});
-      } 
-        else if (text == 2){
-        $("#box").css({'background-color':'green'});
+      const text = $("#value").val();
+        if(text == 1){
+          $("#box").css({'background-color':'red'});
         } 
-          else if (text == 3) {
-          $("#box").css({'background-color':'blue'});
-          }
-            // else {
-            // $("#box").css({'background-color':''});
-            // }
+          else if (text == 2){
+            $("#box").css({'background-color':'green'});
+          } 
+            else if (text == 3) {
+              $("#box").css({'background-color':'blue'});
+            }
     });
-  
   });
   </script>
 </head>
